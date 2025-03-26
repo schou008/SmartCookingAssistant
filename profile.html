@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Cooking App</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: #ff6f61;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #ff8f70;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #ff6f61;
+        }
+        button {
+            background: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #e85b50;
+        }
+        .output {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            min-height: 50px;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-utensils"></i> Smart Cooking Assistant</h1>
+        <nav>
+            <ul>
+                <li><a href="fridge.html"><i class="fas fa-box-open"></i> Fridge-to-Table</a></li>
+                <li><a href="#personalize"><i class="fas fa-user-cog"></i> Personalization</a></li>
+                <li><a href="#health"><i class="fas fa-heartbeat"></i> Health & Wellness</a></li>
+                <li><a href="#skills"><i class="fas fa-book"></i> Improve Skills</a></li>
+                <li><a href="#fun"><i class="fas fa-smile"></i> Cooking Fun</a></li>
+                <li><a href="#sustainability"><i class="fas fa-leaf"></i> Sustainability</a></li>
+                <li><a href="recipe-details.html">Recipe Details</a></li>
+                <li><a href="shopping-list.html">Shopping List</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="scanner.html">Ingredient Scanner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="section">
+            <h2>User Profile</h2>
+            <input type="text" id="favCuisine" placeholder="Your favourite cuisine">
+            <button id="saveCuisine">Save Cuisine</button>
+            <div id="personalize-output" class="output"></div>
+        </section>
+        <script src="../js/taste-preference.js"></script>
+
+    </main>
+    <footer>
+        <p>© 2025 Smart Cooking Assistant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
